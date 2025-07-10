@@ -63,17 +63,10 @@ The "Contact" section provides clear and accessible methods for visitors to get 
     cd personal-portfolio-website
     ```
 3.  **Open `Portf.html`:**
-    Simply open the `index.html` file in your web browser.
+    Simply open the `Portf.html` file in your web browser.
 
 ## Deployment
 
 This project is designed for easy deployment on static site hosting services like GitHub Pages or Netlify.
 
-## Customization
 
-Remember to replace all placeholder content (text, image URLs, links) with your actual information to personalize the portfolio.
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
-````
