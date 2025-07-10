@@ -1,12 +1,6 @@
-Here's a README file for your Personal Portfolio Website project, specifically highlighting the "About Me," "Skills," "Projects," and "Contact" sections as the core components.
-
-````markdown
 # Personal Portfolio Website
-
 ## Project Overview
-
 This is a modern, responsive personal portfolio website designed to serve as my online presence, showcasing my professional journey, technical abilities, and creative work. It's built to provide a structured and engaging platform for potential employers, collaborators, or anyone interested in my work.
-
 ## Problem Statement
 
 In the current digital landscape, a compelling online presence is essential for career advancement. Many individuals, particularly students and job seekers, lack an effective, centralized platform to present their diverse skills, educational background, certifications, and project accomplishments in a structured and visually appealing manner. This project addresses that need by providing a comprehensive and accessible solution.
