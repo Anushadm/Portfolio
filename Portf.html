@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay DM- Personal Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons (Social Media) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #643e61; /* Light blue-gray background */
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+        /* Custom scrollbar for better aesthetics, optional */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #60a5fa; /* Blue-400 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6; /* Blue-500 */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50 top-0">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-blue-600">Vinay D M</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">About</a>
+                <a href="#skills" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Contact</a>
+                <a href="https://example.com/your_resume.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 font-medium shadow-md">Download Resume</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none focus:text-blue-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-inner">
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">About</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Skills</a>
+            <a href="#projects" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Projects</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Contact</a>
+            <a href="https://example.com/your_resume.pdf" target="_blank" class="block px-4 py-2 bg-blue-600 text-white text-center rounded-lg mx-4 mt-2 hover:bg-blue-700 transition duration-300">Download Resume</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-r from-blue-600 to-purple-600 text-white py-24 md:py-32 flex items-center justify-center min-h-screen-minus-nav">
+        <div class="container mx-auto px-4 text-center z-10">
+            <img
+                src="https://media.istockphoto.com/id/1473711199/photo/face-portrait-student-and-man-in-university-ready-for-back-to-school-learning-goals-or.jpg?s=612x612&w=0&k=20&c=Xrwp5ePvm6RjixgAjJo-OAw9oXkLt_HcmT3bdlLZUdw="
+                alt="Your Profile Picture"
+                class="rounded-full w-48 h-48 mx-auto mb-6 border-4 border-white shadow-lg object-cover"
+            />
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Hi, I'm <span class="text-yellow-300">Vinay D M</span></h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                Self-motivated and adaptable developer with applicable database knowledge and coding skills. Organized programmer looking for an opportunity to grow as a developer and support an ambitious startup technology company. Collaborative communicator with relationship building skills.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#projects" class="bg-white text-blue-600 px-7 py-3 rounded-full text-lg font-semibold hover:bg-blue-100 transition duration-300 transform hover:scale-105 shadow-lg">View My Work</a>
+                <a href="#contact" class="border-2 border-white text-white px-7 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300 transform hover:scale-105 shadow-lg">Get In Touch</a>
+            </div>
+        </div>
+        <!-- Simple background animation/pattern (optional) -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute w-40 h-40 bg-white bg-opacity-10 rounded-full top-1/4 left-1/4 animate-pulse"></div>
+            <div class="absolute w-60 h-60 bg-white bg-opacity-10 rounded-full bottom-1/3 right-1/4 animate-pulse delay-200"></div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 md:py-24 bg-white shadow-inner">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">About Me</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="md:order-2">
+                    <img
+                        src="https://media.istockphoto.com/id/1473711199/photo/face-portrait-student-and-man-in-university-ready-for-back-to-school-learning-goals-or.jpg?s=612x612&w=0&k=20&c=Xrwp5ePvm6RjixgAjJo-OAw9oXkLt_HcmT3bdlLZUdw="
+                        alt="About Me"
+                        class="rounded-xl shadow-lg w-full h-auto object-cover"
+                    />
+                </div>
+                <div class="text-lg leading-relaxed md:order-1">
+                    <p class="mb-4">
+                        Hello! I'm <span class="font-semibold text-blue-600">Vinay D M</span>, a driven Engineering Student . I have a strong passion for creating intuitive user experiences, solving complex problems with code, building scalable web applications.
+                    </p>
+                    <p class="mb-4">
+                        I thrive in environments where I can continuously learn and apply new technologies. I believe in writing clean, efficient, and maintainable code. Outside of coding, I enjoy [mention a hobby, e.g., hiking, reading, photography], which helps me stay creative and balanced.
+                    </p>
+                    <p>
+                        I'm always eager to collaborate on exciting projects and contribute to meaningful initiatives. Feel free to connect with me!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">My Skills</h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Skill Category 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+                        <i class="fas fa-code mr-3"></i>Programming Languages
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C Programmimg Language</li>
+                        
+                    </ul>
+                </div>
+                <!-- Skill Category 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+                        <i class="fas fa-laptop-code mr-3"></i>Frontend Development
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>HTML5 & CSS3</li>
+                        <li>Tailwind CSS</li>
+                        <li>React</li>
+                        <li>(Add more)</li>
+                    </ul>
+                </div>
+                <!-- Skill Category 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+                        <i class="fas fa-server mr-3"></i>Backend Development
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Firebase</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <!-- Skill Category 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4 flex items-center">
+                        <i class="fas fa-tools mr-3"></i>Tools & Databases
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>MongoDB</li>
+                        <li>JupyterNotebook</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-white shadow-inner">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img src="https://placehold.co/600x400/E0F2F7/2C3E50?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Airline Reservation System</h3>
+                        <p class="text-gray-700 mb-4">The project involves developing an online airline reservation system that allows users to book and manage 
+flight tickets, with a focus on UI design and data handling. The Technologies used are Html, CSS, JavaScript and C programming lannguage.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Html</span>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
+                            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">C</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/yourusername/project1" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300 flex items-center">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                            <a href="https://yourproject1livedemo.com" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300 flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img src="https://placehold.co/600x400/E0F2F7/2C3E50?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Fake Currency Detection Using Machine Learning</h3>
+                        <p class="text-gray-700 mb-4">Developed a robust and efficient machine learning model to accurately detect counterfeit currency notes.The increasing prevalence of sophisticated counterfeit currency poses a significant threat to the global economy. This project will leverage the power of machine learning algorithms to analyze various features of currency
+notes, such as image-based features, physical features.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-100 text-red-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Machine Learning Libraries</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">JupyterNotebook</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/yourusername/project2" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300 flex items-center">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                            <a href="https://yourproject2livedemo.com" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300 flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img src="https://placehold.co/600x400/E0F2F7/2C3E50?text=Project+3" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Intelligent Monitoring System In Psychological Health Using IoT</h3>
+                        <p class="text-gray-700 mb-4">A Health Monitoring System that utilizes Arduino, the AD8232 ECG sensor, and a temperature sensor to track key vital signs such as heart rate, ECG signals, and body temperature in real-time. This system offers continuous, reliable health tracking, promoting early detection of health issues and ensuring timely intervention.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Arduino IDE Software.</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">C++.</span>
+                            <span class="bg-orange-100 text-orange-800 text-sm font-medium px-3 py-1 rounded-full">Hardware Components.</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/yourusername/project3" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300 flex items-center">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                            <a href="https://yourproject3livedemo.com" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300 flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">Get In Touch</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                Have a project in mind, a question, or just want to say hi? Feel free to reach out! I'm always open to new opportunities and collaborations.
+            </p>
+            <div class="flex flex-col items-center justify-center space-y-6 md:space-y-0 md:flex-row md:space-x-8 mb-12">
+                <a href="mailto:your.email@example.com" class="bg-blue-600 text-white px-8 py-4 rounded-full text-xl font-semibold hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg flex items-center">
+                    <i class="fas fa-envelope mr-3"></i>Email Me
+                </a>
+                <a href="https://example.com/your_resume.pdf" target="_blank" class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full text-xl font-semibold hover:bg-blue-600 hover:text-white transition duration-300 transform hover:scale-105 shadow-lg flex items-center">
+                    <i class="fas fa-file-pdf mr-3"></i>Download Resume
+                </a>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">Connect with me on Social Media</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-600 hover:text-blue-700 transition duration-300 text-4xl transform hover:scale-110">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" class="text-gray-600 hover:text-gray-900 transition duration-300 text-4xl transform hover:scale-110">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/yourhandle" target="_blank" class="text-gray-600 hover:text-blue-400 transition duration-300 text-4xl transform hover:scale-110">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <!-- Add more social media links as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; <span id="current-year"></span> Vinay D M. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#about" class="text-gray-300 hover:text-blue-400 transition duration-300">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-blue-400 transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-blue-400 transition duration-300">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-blue-400 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for internal links (basic implementation, CSS handles most)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Adjust hero section min-height for navbar height (optional, if fixed navbar overlaps)
+        // const navbarHeight = document.querySelector('nav').offsetHeight;
+        // document.getElementById('hero').style.minHeight = `calc(100vh - ${navbarHeight}px)`;
+
+    </script>
+</body>
+</html>
